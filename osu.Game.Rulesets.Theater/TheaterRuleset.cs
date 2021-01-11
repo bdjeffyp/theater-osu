@@ -24,6 +24,7 @@ namespace osu.Game.Rulesets.Theater
 
         public override string PlayingVerb => "Leveling up ... with music!";
 
+
         public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) => new DrawableTheaterRuleset(this, beatmap, mods);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new TheaterBeatmapConverter(beatmap, this);
@@ -44,8 +45,8 @@ namespace osu.Game.Rulesets.Theater
 
         public override IEnumerable<KeyBinding> GetDefaultKeyBindings(int variant = 0) => new[]
         {
-            new KeyBinding(InputKey.Z, TheaterAction.Button1),
-            new KeyBinding(InputKey.X, TheaterAction.Button2),
+            new KeyBinding(InputKey.Z, TheaterAction.LeftTapButton),
+            new KeyBinding(InputKey.M, TheaterAction.RightTapButton),
         };
 
         public override Drawable CreateIcon() => new SpriteText
