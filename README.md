@@ -1,6 +1,6 @@
 # osu!theater
 
-A customized [osu!](https://github.com/ppy/osu) game mode that resembles the Theatrhythm games by Square/indieszero!
+A customized [osu!](https://github.com/ppy/osu) game mode that resembles the Theatrhythm games by Square Enix/indieszero!
 
 This is currently a work-in-progress and does nothing yet... Stay tuned!
 
