@@ -1,4 +1,5 @@
 # osu!theater
+[![CodeFactor](https://www.codefactor.io/repository/github/bdjeffyp/theater-osu/badge)](https://www.codefactor.io/repository/github/bdjeffyp/theater-osu)
 
 A customized [osu!](https://github.com/ppy/osu) game mode that resembles the Theatrhythm games by Square Enix/indieszero!
 
