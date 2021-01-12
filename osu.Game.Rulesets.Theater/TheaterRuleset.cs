@@ -24,7 +24,6 @@ namespace osu.Game.Rulesets.Theater
 
         public override string PlayingVerb => "Leveling up ... with music!";
 
-
         public override DrawableRuleset CreateDrawableRulesetWith(IBeatmap beatmap, IReadOnlyList<Mod> mods = null) => new DrawableTheaterRuleset(this, beatmap, mods);
 
         public override IBeatmapConverter CreateBeatmapConverter(IBeatmap beatmap) => new TheaterBeatmapConverter(beatmap, this);
