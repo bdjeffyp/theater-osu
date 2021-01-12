@@ -23,10 +23,28 @@ namespace osu.Game.Rulesets.Theater
         [Description("Right Tap Button")]
         RightTapButton,
 
-        [Description("Left Direction Stick")]
-        LeftStick,
+        [Description("Left Analog Stick: Left")]
+        LeftAnalogLeftDirection,
 
-        [Description("Right Direction Stick")]
-        RightStick,
+        [Description("Left Analog Stick: Right")]
+        LeftAnalogRightDirection,
+
+        [Description("Left Analog Stick: Up")]
+        LeftAnalogUpDirection,
+
+        [Description("Left Analog Stick: Down")]
+        LeftAnalogDownDirection,
+
+        [Description("Right Analog Stick: Left")]
+        RightAnalogLeftDirection,
+
+        [Description("Right Analog Stick: Right")]
+        RightAnalogRightDirection,
+
+        [Description("Right Analog Stick: Up")]
+        RightAnalogUpDirection,
+
+        [Description("Right Analog Stick: Down")]
+        RightAnalogDownDirection,
     }
 }

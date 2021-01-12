@@ -45,8 +45,16 @@ namespace osu.Game.Rulesets.Theater
 
         public override IEnumerable<KeyBinding> GetDefaultKeyBindings(int variant = 0) => new[]
         {
-            new KeyBinding(InputKey.Z, TheaterAction.LeftTapButton),
-            new KeyBinding(InputKey.M, TheaterAction.RightTapButton),
+            new KeyBinding(InputKey.Joystick5, TheaterAction.LeftTapButton),
+            new KeyBinding(InputKey.Joystick6, TheaterAction.RightTapButton),
+            new KeyBinding(InputKey.JoystickAxis1Negative, TheaterAction.LeftAnalogLeftDirection),
+            new KeyBinding(InputKey.JoystickAxis1Positive, TheaterAction.LeftAnalogRightDirection),
+            new KeyBinding(InputKey.JoystickAxis2Negative, TheaterAction.LeftAnalogUpDirection),
+            new KeyBinding(InputKey.JoystickAxis2Positive, TheaterAction.LeftAnalogDownDirection),
+            new KeyBinding(InputKey.JoystickAxis4Negative, TheaterAction.RightAnalogLeftDirection),
+            new KeyBinding(InputKey.JoystickAxis4Positive, TheaterAction.RightAnalogRightDirection),
+            new KeyBinding(InputKey.JoystickAxis5Negative, TheaterAction.RightAnalogUpDirection),
+            new KeyBinding(InputKey.JoystickAxis5Positive, TheaterAction.RightAnalogDownDirection),
         };
 
         public override Drawable CreateIcon() => new SpriteText
