@@ -23,7 +23,7 @@ namespace osu.Game.Rulesets.Theater.UI
         public DrawableTheaterRuleset(TheaterRuleset ruleset, IBeatmap beatmap, IReadOnlyList<Mod> mods = null)
             : base(ruleset, beatmap, mods)
         {
-            Direction.Value = ScrollingDirection.Left;
+            Direction.Value = ScrollingDirection.Right;
             TimeRange.Value = 6000;
         }
 

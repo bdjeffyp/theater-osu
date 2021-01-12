@@ -4,16 +4,13 @@ A customized [osu!](https://github.com/ppy/osu) game mode that resembles the The
 
 This is currently a work-in-progress and does nothing yet... Stay tuned!
 
+## Prerequisites
+You will need a copy of osu!laser built and run at least once. Visit the [osu!laser](https://github.com/ppy/osu) GitHub page for details on how to build that project.
+
 ## Installation
 Since this is a work-in-progress, there is currently no release to install. Follow the Build directions below to compile the `osu.Game.Rulesets.Theater.dll` file.
 
-Once built, open the osu! game folder. The best way to accomplish this is to start osu!, go to the settings menu, and find and click on the **Open osu! folder** button.
-
-Copy the `osu.Game.Rulesets.Theater.dll` file into the `rulesets` directory. Overwrite any previous copy of the existing osu!theater ruleset.
-
-Close and restart osu! if still open. The new game mode should appear under the Mode menu when you enter the song selection menu.
-
-Note: This mode is currently only supported in desktop mode. Mobile support is planned in the future.
+**NOTE:** This mode is currently only supported in desktop mode. Mobile support is planned in the future.
 
 ## Development
 When developing or debugging the `theater-osu` codebase, a few prerequisites are required as following:
@@ -33,11 +30,11 @@ Updating this code to the latest commit would be done with `git pull` inside the
 ### Building the game mode
 To build the osu!theater game mode, you will need to have the latest [.NET Core](https://dotnet.microsoft.com/download) installed on your computer.
 
-First, open a terminal and navigate to wherever you have the osu!theater source code downloaded. Once you are in the root of the repository, enter the directory named `osu.Game.Rulesets.Theater`.
+You can run osu!laser with this game mode installed for you directly from the IDE! The `.csproj` file contains a post-build event script that always runs when the Debug (F5) or Run Without Debugging (Ctrl+F5) command is given in Visual Studio 2019. Running from the IDE will issue an error dialog stating that "A project with an Output Type of Class Library cannot be started directly" after closing osu!laser that can be safely ignored.
 
-Next, run the command `dotnet build` and wait for the project to be built.
+If you are not using Visual Studio 2019 or you feel inclined to, you can also run osu!laser with the osu!theater ruleset from the command line when you build this project with `dotnet build`.
 
-Once the project has finished building, `dotnet` should tell you where the binary was built to (usually `./tau/osu.Game.Rulesets.Theater/bin/Debug/netstandardx.x/`). Find the .dll binary in the given location and follow the installation instructions above.
+**NOTE:** You will need to update the `osu.Game.Rulesets.Theater.csproj` file and modify the `<OsuDir>` environment variable with the build location of your instance of osu!laser for this to work.
 
 ## Contributions
 All contributions are appreciated in order to improve the mode's playability and functionality. Contributions should be done over an issue or a pull request.
