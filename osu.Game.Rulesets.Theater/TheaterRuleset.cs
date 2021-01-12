@@ -20,7 +20,7 @@ namespace osu.Game.Rulesets.Theater
     {
         public override string ShortName => "theater";
         
-        public override string Description => "A ruleset based on the Theatrhythm games";
+        public override string Description => "osu!theater";
 
         public override string PlayingVerb => "Leveling up ... with music!";
 

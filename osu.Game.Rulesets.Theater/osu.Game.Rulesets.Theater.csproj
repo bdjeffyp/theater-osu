@@ -5,6 +5,10 @@
     <OutputType>Library</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <RootNamespace>osu.Game.Rulesets.Theater</RootNamespace>
+    <OsuDir>c:\src\osu\osu.Desktop\bin\Debug\netcoreapp3.1\</OsuDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\**" />
@@ -16,4 +20,7 @@
     <Folder Include="Resources\Samples\Gameplay" />
     <Folder Include="Resources\Textures" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y $(TargetPath) $(OsuDir)&#xD;&#xA;$(OsuDir)\osu!.exe" />
+  </Target>
 </Project>
